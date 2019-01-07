@@ -1,0 +1,169 @@
+
+homework assignment due 1/7/19
+
+
+1)
+SELECT * 
+FROM Customers
+WHERE Country='Germany' 
+AND City='Berlin'; 
+only 1 record was affected.
+
+2)
+SELECT * 
+FROM Customers
+WHERE City='Paris'
+OR Country='Germany'
+13 records were affected.
+
+3)
+SELECT * 
+FROM Customers
+WHERE City='Graz'
+OR Country='Austria'
+2 records were affected
+
+4)
+SELECT * 
+FROM Customers
+WHERE City='Paris'
+AND Country='France'
+2 records were affected
+
+5)
+SELECT * 
+FROM Customers
+WHERE City='Lille'
+AND Country='France'
+only 1 record was affected 
+
+6)
+SELECT * 
+FROM Customers
+WHERE City='Barcelona'
+AND Country='Spain'
+only 1 was affected
+
+7)
+SELECT * 
+FROM Customers
+WHERE City='Berlin'
+and Country='Germany'
+only 1 was affected
+
+8)
+
+
+9)
+SELECT * 
+FROM Customers
+WHERE City='Graz'
+and Country='Austria'
+only 1 was effected 
+
+
+10.
+SELECT * 
+FROM Customers
+WHERE City='Paris'
+and Country='France'
+only 2 were affected 
+
+11.
+SELECT * 
+FROM Customers
+WHERE City='Lille'
+and Country='France'
+only 1 was effectd
+
+12.
+SELECT * 
+FROM Customers
+WHERE City='Lille'
+and Country='France'
+only 1 was effected
+
+
+13.
+SELECT * 
+FROM Customers
+WHERE NOT Country='Mexico';
+86 were affeceted
+
+
+14.
+SELECT * 
+FROM Customers
+WHERE NOT Country='Portland';
+91 recoreds were affected 
+
+
+15.
+SELECT * 
+FROM Customers
+WHERE NOT Country='US';
+91 recoreds were affected
+
+
+16.
+SELECT * 
+FROM Customers
+WHERE NOT Country='Finland';
+89 were affeceted 
+
+
+17.
+SELECT * 
+FROM Customers
+WHERE NOT Country='Brazil';
+82 records were affected 
+
+
+18.
+SELECT * 
+FROM Customers
+WHERE NOT Country='Germany';
+80 records were affected 
+
+
+19.
+SELECT * FROM Customers
+WHERE Country='Germany' AND (City='Mannheim' OR City='Munchen');
+1 records was affected
+
+
+20.
+SELECT * 
+FROM Customers
+WHERE Country='USA' AND (City='Seattle' OR City='Portland');
+3
+
+21.
+SELECT * FROM Customers
+WHERE Country='USA' AND (City='Anchorage' OR City='Albuquerque');
+2 records were affected
+
+
+
+22.
+SELECT * 
+FROM Customers
+WHERE Country='USA' AND (City='Seattle' OR City='Kirkland');
+2 records were affected
+
+
+
+23.
+no result
+
+
+
+24.
+SELECT * 
+FROM Customers
+WHERE Country='Spain' AND (City='Madrid' OR City='Barcelona');
+4 records were affected 
+
+
+
+
