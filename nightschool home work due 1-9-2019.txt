@@ -1,0 +1,33 @@
+nightschool homework due 1/9/19
+
+select *
+from cars
+
+/*1*/
+select make, max(mpg_city) as city_mpg_max
+from cars
+group by make
+order by city_mpg_max desc
+
+/*2*/
+select origin, avg(invoice) as avg_invoice
+from cars
+where type = 'Sedan'
+group by origin
+order by avg_invoice desc
+
+/*3*/
+select make, driveTrain, sum(weight) as DT_weight
+from cars
+group by DriveTrain, make
+having sum(weight) >= 55000
+order by DT_weight
+
+
+/*4*/
+select origin, count(type) as results
+from cars
+where (engineSize >3 or MPG_city >=26 )
+group by origin, type
+having count(type) between 8 and 20
+order by count (type) desc
